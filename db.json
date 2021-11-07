@@ -1,0 +1,55 @@
+{
+  "furniture": [
+      {
+          "id": "1",
+          "title": "BRIMNES",
+          "type": "dresser",
+          "price": 90,
+           "location": {
+              "country": "Lithuania",
+              "city": "Vilnius",
+              "street": "Laisvės pr. 88"
+          },
+          "owner": {
+              "fullname": "UAB Evinara",
+              "mobile": "+370 622 11 118 ",
+              "address": "Vilnius, Laisvės pr. 88",
+              "email": "info@baldusale.lt"
+          }
+      },
+      {
+          "id": "2",
+          "title": "INGATORP",
+          "type": "table",
+          "price": 249,
+          "location": {
+              "country": "Lithuania",
+              "city": "Vilnius",
+              "street": "Vikingų 1"
+          },
+          "owner": {
+              "fullname": "IKEA",
+              "mobile": "+370 5 250 00 55",
+              "address": "klaipėda, Šilutės pl. 29",
+              "email": " info@IKEA.lt."
+          }
+      },
+      {
+          "id": "3",
+          "title": "SIG1691",
+          "type": "bed",
+          "price": 680,
+          "location": {
+              "country": "Lithuania",
+              "city": "Vilnius",
+              "street": "Laisvės pr. 88"
+          },
+          "owner": {
+              "fullname": "UAB Evinara",
+              "mobile": "+370 622 11 118 ",
+              "address": "Vilnius, Laisvės pr. 88",
+              "email": "info@baldusale.lt"
+          }
+      }
+  ]
+}
