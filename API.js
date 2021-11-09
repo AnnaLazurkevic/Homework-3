@@ -1,44 +1,37 @@
-const url = 'http://localhost:3000/furniture';
+const serverURL = 'http://localhost:3000';
 
- const getFurniture = (success, failure)=>{
-     fetch(url)
-     .then(response => console.log(response.json()))
-    //  .then(data=>console.log(data))
-     .then(success)
-     .catch(failure);
+class API {
+  static getFurniture = (success, failure) => {
+    setTimeout(() => {
+      fetch(`${serverURL}/furniture`)
+        .then(res => console.log(res.json()))
+        .then(success)
+        .catch(failure)
+    }, 1000);
+  }
 
-    //  
+  static deleteFurniture = (id, success, failure) => {
+    fetch(`${serverURL}/furniture/${id}`, { method: 'DELETE' })
+      .then(res => res.json())
+      .then(success)
+      .catch(failure)
+  }
+}
 
-    //  .then(response=>{
-    //      if(response.ok){
-    //          return response.json()
-    //      }else{
-    //          console.log('ERROR')
-    //          throw Error
-    //      }
-    //  })
-    //  .catch(error=>console.log(error))
-    
- 
-};
+// API.getFurniture(
+//   (duomenys) => console.log('gavau duomenis', duomenys), 
+//   (klaida) => console.error('klaida!!!', klaida) 
+// )
 
-const deleteFurniture = (success, failure, id) => {
-    fetch('http://localhost:3000/furniture'+id , { method: 'DELETE' })
-    .then(success)
-    .catch(failure);
-  };
 
-  const API = {
-    getFurniture,
-    deleteFurniture
-  };
-//  getFurniture()
-//  deleteFurniture()
+// API.deleteFurniture(
+//   '1', 
+//   (duomenys) => console.log('gavau duomenis', duomenys), 
+//   (klaida) => console.error('klaida!!!', klaida) 
+// )
 
- 
-// const getUsers = (success, failure) => {
-//     fetch(urlBase + '/users')
-//       .then(response => response.json())
-//       .then(success)
-//       .catch(failure);
-//   }
+
+
+
+
+

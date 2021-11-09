@@ -1,3 +1,4 @@
-const rootElement = document.querySelector('#root');
-const furnitureTable = new FurnitureComponent( )
-rootElement.append(furnitureTable.htmlElement)
+const rootContainer = document.querySelector('#root');
+
+const furnitureGrid = new FurnitureGridComponent();
+rootContainer.append(furnitureGrid.htmlElement);
